@@ -1,1 +1,3 @@
-"# 4ta-Entrega-del-Proyecto-Final" 
+# 4ta Entrega del Proyecto Final
+Todavia me faltan hacer bastantes cambios en todas las secciones donde se encuentran los productos para hacerlos responsive y seguramente cambie la mayor parte de todas esas secciones. Tambien la pagina principal falta arreglarla bastante.
+El footer es lo unico que esta definido y la seccion de contacto practicamente tambien.
