@@ -1,0 +1,701 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%; } }
+
+.textoInicio {
+  background-color: #141418;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: -16px; }
+
+.textoInicio__adentro {
+  color: white;
+  padding-top: 30px; }
+
+.textoInicio__adentro--otro {
+  color: #B1AFA5;
+  font-size: 20px;
+  padding-bottom: 30px; }
+
+.textoBiciMontana {
+  background-color: #332e26;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoBiciPaseo {
+  background-color: #324d33;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoBiciRuta {
+  background-color: #4a4e50;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoHombres {
+  background-color: #14384d;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoMujeres {
+  background-color: #39253f;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoAccesorios {
+  background-color: #523f18;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center; }
+
+.textoNegrita {
+  color: black;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 40px 20px;
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . ."; }
+
+.cardMTB {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #332e26;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardMTB::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardMTB:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardMTB:hover .imgBxMTB img {
+    max-width: 50%; }
+  .cardMTB:hover .contentBxMTB .buy {
+    top: 0;
+    opacity: 1; }
+  .cardMTB::after {
+    content: 'Montaña';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardMTB .imgBxMTB {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardMTB .imgBxMTB img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardMTB .contentBxMTB {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardMTB .contentBxMTB h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardMTB .contentBxMTB .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardMTB .contentBxMTB .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #4e4538;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.cardPaseo {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #324d33;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardPaseo::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardPaseo:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardPaseo:hover .imgBxPaseo img {
+    max-width: 50%; }
+  .cardPaseo:hover .contentBxPaseo .buy {
+    top: 0;
+    opacity: 1; }
+  .cardPaseo::after {
+    content: 'Paseo';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardPaseo .imgBxPaseo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardPaseo .imgBxPaseo img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardPaseo .contentBxPaseo {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardPaseo .contentBxPaseo h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardPaseo .contentBxPaseo .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardPaseo .contentBxPaseo .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #406842;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.cardRuta {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #4a4e50;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardRuta::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardRuta:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardRuta:hover .imgBxRuta img {
+    max-width: 50%; }
+  .cardRuta:hover .contentBxRuta .buy {
+    top: 0;
+    opacity: 1; }
+  .cardRuta::after {
+    content: 'Ruta';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardRuta .imgBxRuta {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardRuta .imgBxRuta img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardRuta .contentBxRuta {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardRuta .contentBxRuta h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardRuta .contentBxRuta .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardRuta .contentBxRuta .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #5c6366;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.cardHombre {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #14384d;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardHombre::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardHombre:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardHombre:hover .imgBxHombre img {
+    max-width: 50%; }
+  .cardHombre:hover .contentBxHombre .buy {
+    top: 0;
+    opacity: 1; }
+  .cardHombre::after {
+    content: 'Hombre';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardHombre .imgBxHombre {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardHombre .imgBxHombre img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardHombre .contentBxHombre {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardHombre .contentBxHombre h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardHombre .contentBxHombre .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardHombre .contentBxHombre .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #184c69;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.cardMujer {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #39253f;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardMujer::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardMujer:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardMujer:hover .imgBxMujer img {
+    max-width: 50%; }
+  .cardMujer:hover .contentBxMujer .buy {
+    top: 0;
+    opacity: 1; }
+  .cardMujer::after {
+    content: 'Mujer';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardMujer .imgBxMujer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardMujer .imgBxMujer img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardMujer .contentBxMujer {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardMujer .contentBxMujer h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardMujer .contentBxMujer .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardMujer .contentBxMujer .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #4c3055;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.cardAccesorio {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: #523f18;
+  border-radius: 20px;
+  overflow: hidden; }
+  .cardAccesorio::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #c0bcbc;
+    transform: skewY(345deg);
+    transition: 0.5s; }
+  .cardAccesorio:hover::before {
+    top: -70%;
+    transform: skewY(390deg); }
+  .cardAccesorio:hover .imgBxAccesorio img {
+    max-width: 50%; }
+  .cardAccesorio:hover .contentBxAccesorio .buy {
+    top: 0;
+    opacity: 1; }
+  .cardAccesorio::after {
+    content: 'Accesorio';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.1); }
+  .cardAccesorio .imgBxAccesorio {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    mix-blend-mode: multiply; }
+    .cardAccesorio .imgBxAccesorio img {
+      max-width: 100%;
+      transition: 0.5s; }
+  .cardAccesorio .contentBxAccesorio {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1; }
+    .cardAccesorio .contentBxAccesorio h3 {
+      font-size: 18px;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
+    .cardAccesorio .contentBxAccesorio .price {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 1px; }
+    .cardAccesorio .contentBxAccesorio .buy {
+      position: relative;
+      top: 200px;
+      opacity: 0;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: #fff;
+      text-decoration: none;
+      background: #6b511d;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s; }
+
+.fondoVideo {
+  background-color: black; }
+
+.fondoVideo__video {
+  height: 500px;
+  width: 100%; }
+
+.seccionInicio {
+  background-color: #141418; }
+
+.seccionMontana {
+  background-color: #4e4538; }
+
+.seccionPaseo {
+  background-color: #406842; }
+
+.seccionRuta {
+  background-color: #5c6366; }
+
+.seccionHombre {
+  background-color: #184c69; }
+
+.seccionMujer {
+  background-color: #4c3055; }
+
+.seccionAccesorio {
+  background-color: #6b511d; }
+
+.seccionContacto {
+  background-color: #22222b; }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Rubik Mono One', sans-serif; }
+
+.formulario {
+  color: white;
+  text-align: center; }
+
+.textoContacto {
+  color: white;
+  text-align: center; }
+
+.contact-section {
+  background: url() no-repeat center;
+  background-size: cover;
+  padding: 40px 0; }
+  .contact-section h1 {
+    text-align: center;
+    color: #ddd; }
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto; }
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s; }
+  .contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e; }
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px; }
+
+.contact-form-btn {
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s; }
+  .contact-form-btn:hover {
+    background: #2980b9; }
+
+.container {
+  max-width: 1170px;
+  margin: auto; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+  font-family: 'Poppins', sans-serif; }
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px; }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative; }
+    .footer-col h4::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #e91e63;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px; }
+  .footer-col ul li:not(:last-child) {
+    margin-bottom: 10px; }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease; }
+    .footer-col ul li a:hover {
+      color: #ffffff;
+      padding-left: 8px; }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease; }
+    .footer-col .social-links a:hover {
+      color: #24262b;
+      background-color: #ffffff; }
+
+.nosotros {
+  color: #bbbbbb;
+  font-family: 'Poppins', sans-serif; }
