@@ -1,14 +1,14 @@
 {
   "name": "entrega-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mi primera pagina - Bicicleteria",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/demo.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Rodrigo Wayar",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
